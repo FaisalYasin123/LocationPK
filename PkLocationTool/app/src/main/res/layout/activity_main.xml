@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="8dp">
+        <EditText android:id="@+id/searchBox" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:hint="Search place in Pakistan" android:inputType="text"
+            android:imeOptions="actionSearch" android:maxLines="1"/>
+        <Button android:id="@+id/searchBtn" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Search"/>
+    </LinearLayout>
+
+    <org.osmdroid.views.MapView android:id="@+id/map"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView android:id="@+id/coords" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="8dp"
+        android:text="Tap on the map or search to choose a location"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="8dp">
+        <Button android:id="@+id/setBtn" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Set Location"/>
+        <Button android:id="@+id/stopBtn" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Stop"/>
+    </LinearLayout>
+</LinearLayout>
